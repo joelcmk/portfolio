@@ -1,22 +1,3 @@
-a {
-  color: #202840;
-}
-
-a:visited {
-  /* visited link */
-  color: #202840;
-}
-
-a:hover,
-a:focus {
-  /* No decoration when hovering over a link */
-  text-decoration: none;
-}
-
-a:active {
-  /* selected link */
-  color: #489c79;
-}
 
 .page-header {
   display: flex;

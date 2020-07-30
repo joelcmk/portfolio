@@ -1,0 +1,104 @@
+/* Colors Used
+
+Text Color (Dark Gray): #2b2b2b;
+Primary Color (Purple): #357b70;
+Secondary Color (Orange): #e0b354;
+*/
+:root {
+  --primary-color: #202840;
+  --secundary-color: #F2E7AE;
+  --dark-gray: #F2E7AE;
+  --visited-links: #202840;
+  --active-links: #489c79;
+  --white: #fff;
+  --lightgray: #f9a637;
+  --font-weight-400: 400;
+  --font-weight-700: 700;
+}
+
+.home_work {
+  clear: both;
+  background-color: #fff;
+}
+
+.home_work h1 {
+  margin: 0;
+  text-align: center;
+}
+
+.a-work {
+  color: #fff;
+  text-decoration: none;
+}
+
+.a-work:visited {
+  color: #fff;
+}
+
+.work-s {
+  font-weight: bolder;
+  color: #202840;
+}
+
+#work_app {
+  margin-left: 10px;
+}
+
+/* Grid fallback */
+.grid__item {
+  display: inline-block;
+  width: 33%;
+}
+
+/* Styling CSS grid */
+.grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 20px;
+}
+
+.grid__item {
+  background-color: #f9a637;
+  padding: 10px;
+  color: white;
+
+  /* Set width to auto */
+  width: auto;
+}
+
+.grid__item:last-child {
+  grid-column: 3 / 3;
+  grid-row: 1 / 3;
+}
+
+@media all and (max-width: 500px) {
+  .grid {
+    grid-template-columns: 1fr;
+  }
+
+  .prev, .next, .text {
+    font-size: 11px;
+  }
+}
+
+@media all and (min-width: 500px) and (max-width: 750px) {
+  .grid {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media all and (max-width: 750px) {
+  /* shared code */
+  .grid {
+    grid-gap: 10px;
+  }
+
+  .grid__item:last-child {
+    grid-column: auto / auto;
+    grid-row: auto / auto;
+  }
+
+  h1 {
+    font-size: 22px;
+  }
+}
