@@ -13,16 +13,13 @@ class Header extends Component {
           <nav className="main-navegation page-header__item">
             <ul role="menubar" className="navegation-list">
               <li role="presentation">
-                <Link href="index.html" role="menuitem" className="navigation-list__item">Home</Link>
+                <Link to="/" role="menuitem" className="navigation-list__item">Home</Link>
               </li>
               <li role="presentation">
                 <Link to="/about" role="menuitem" className="navigation-list__itemå+">About Me</Link>
               </li>
               <li role="presentation">
-                <a href="contact.html" role="menuitem" className="navigation-list__item">Contact</a>
-              </li>
-              <li role="presentation">
-                <a href="work.html" role="menuitem" className="navigation-list__item">Work</a>
+                <Link to="/contact" role="menuitem" className="navigation-list__item">Contact</Link>
               </li>
             </ul>
           </nav>

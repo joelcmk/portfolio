@@ -1,0 +1,30 @@
+.about {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.about-a {
+  text-align: center; 
+}
+
+.about-svg {
+  width: 750px;
+  margin: 0 auto;
+}
+
+.about-a {
+  display: flex;
+  justify-content: center;
+}
+
+.about-list {
+  list-style-type: none;
+  margin-bottom: 10px;
+  padding: 0;
+}
+
+@media all and (max-width: 750px) {
+  .about-svg {
+    width: 300px;
+  }
+}

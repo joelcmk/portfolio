@@ -3,6 +3,7 @@ import './App.css';
 import Home from "./Pages/Home";
 import Header from './Header';
 import Footer from './Footer';
+import Contact from './Pages/Contact'
 import About from './Pages/About';
 import {
   BrowserRouter as Router,
@@ -20,6 +21,7 @@ class App extends Component {
           <Switch>
             <Route path="/" exact component={Home} />
             <Route path="/about" component={About} />
+            <Route path="/contact" component={Contact} />
           </Switch>
         </div>
         <Footer />
