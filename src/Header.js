@@ -1,21 +1,22 @@
 import React, { Component } from "react";
 import "./Header.css"
+import { Link } from 'react-router-dom';
 
 class Header extends Component {
   render() {
     return (
       <div className="Header">
         <header className="page-header">
-          <a className="page-header--logo" href="index.html">
+          <Link className="page-header--logo" to="/">
             Joel Saucedo
-          </a>
+          </Link>
           <nav className="main-navegation page-header__item">
             <ul role="menubar" className="navegation-list">
               <li role="presentation">
-                <a href="index.html" role="menuitem" className="navigation-list__item">Home</a>
+                <Link href="index.html" role="menuitem" className="navigation-list__item">Home</Link>
               </li>
               <li role="presentation">
-                <a href="about.html" role="menuitem" className="navigation-list__itemå+">About Me</a>
+                <Link to="/about" role="menuitem" className="navigation-list__itemå+">About Me</Link>
               </li>
               <li role="presentation">
                 <a href="contact.html" role="menuitem" className="navigation-list__item">Contact</a>
