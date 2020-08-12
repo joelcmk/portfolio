@@ -6,9 +6,16 @@ import Linkedin from './img/linkedin.svg';
 import Mail from './img/mail.svg'
 
 class Footer extends Component {
+  state = {
+    active: true,
+  }
+
+
+
   render() {
+
     return (
-      <div className="page_footer">
+      <div className={window.location.pathname === '/contact' ? "test page_footer" : "page_footer"}>
         <p>Find me on</p>
         <div className="social-media">
           <a href="https://github.com/joelcmk"><img src={Github} /> </a>

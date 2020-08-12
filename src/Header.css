@@ -33,10 +33,9 @@
   margin-right: 20px;
 }
 
-.navigation-list__item--active {
+.navbar__link--active {
   text-decoration: none;
 }
-
 
 @media all and (max-width: 750px) {
 

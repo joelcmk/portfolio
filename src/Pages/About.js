@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import Texas from '../img/texas.svg'
 import './About.css'
+import Footer from '../Footer'
 
 class About extends Component {
   render() {
@@ -28,6 +29,7 @@ class About extends Component {
           <img className="about-svg" src={Texas} />
         </div>
         <a class="about-a" href="https://www.vecteezy.com/free-vector/austin">Austin Vectors by Vecteezy</a>
+        <Footer />
       </div >
     )
   }

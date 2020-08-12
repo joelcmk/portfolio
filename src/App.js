@@ -13,6 +13,8 @@ import {
 } from "react-router-dom";
 
 class App extends Component {
+
+
   render() {
     return (
       <Router>
@@ -24,7 +26,6 @@ class App extends Component {
             <Route path="/contact" component={Contact} />
           </Switch>
         </div>
-        <Footer />
       </Router>
     )
   }

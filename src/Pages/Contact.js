@@ -1,7 +1,12 @@
 import React, { Component } from 'react';
 import './Contact.css';
+import Footer from '../Footer'
 
 class Contact extends Component {
+  state = {
+    active: false,
+  }
+
   render() {
     return (
       <div className="contact">
@@ -12,6 +17,7 @@ class Contact extends Component {
           <div><a href="mailto:joelcmk@gmail.com">joelcmk@gmail.com</a></div>
           <div><a href="https://medium.com/@joelcmk/">Medium</a></div>
         </div>
+        <Footer active={this.state.active} />
       </div >
     )
   }

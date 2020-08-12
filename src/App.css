@@ -70,3 +70,7 @@ button:focus,
   cursor: pointer;
   opacity: 0.8;
 }
+
+.test { 
+  color: red;
+}
