@@ -3,26 +3,44 @@ import Pokemon from './img/pokemon_1.png'
 import './WorkCard.css'
 
 class WorkCard extends Component {
+  state = {
+    hover: false,
+  }
+
+  hoverOn = () => {
+    this.setState({
+      hover: true
+    })
+  }
+
+  hoverOff = () => {
+    this.setState({
+      hover: false
+    })
+  }
+
   render() {
     return (
-      <section className="home_work"><a id="work"></a>
-        <h1>Work</h1>
-        <div className="grid">
-          <div className="grid__item">
-            <div className="img-container">
-              <img className="img" src={Pokemon} />
-            </div>
-            <div>
-              <h2><a className="a-work" href="pokemon.html">Pokemon jQuery</a></h2>
-              <span className="work-s">jQuery + Public API</span>
-            </div>
+      <div
+        className="grid__item test2"
+        onMouseEnter={this.hoverOn}
+        onMouseLeave={this.hoverOff}
+      >
+        {this.state.hover ?
+          <div className="test">
+            <p>Shows a list of Pokemon. View the height and name of each Pokemon.</p>
             <div>
               <button>Code</button>
-              <button>Aplication</button>
+              <button>Application</button>
             </div>
           </div>
-        </div>
-      </section>
+          :
+          <div >
+            <h2>Pokemon jQuerty</h2>
+            <img className="img" src={Pokemon} />
+          </div>
+        }
+      </div>
     )
   }
 }
