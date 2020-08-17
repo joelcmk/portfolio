@@ -58,6 +58,10 @@ class WorkCard extends Component {
               <div >
                 <h2>Pokemon jQuerty 1</h2>
                 <img className="img" src={Pokemon} />
+                <div className="btn-test">
+                  <button>Code</button>
+                  <button>Application</button>
+                </div>
               </div>
             }
           </div>
