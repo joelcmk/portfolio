@@ -34,9 +34,10 @@ class WorkCard extends Component {
     })
   }
 
+
+
   render() {
     const test = this.state.card;
-    const card = '1'
     return (
       <section className="home_work">
         <div className="grid">
@@ -46,24 +47,21 @@ class WorkCard extends Component {
             onMouseLeave={this.hoverOff}
           >
             {this.state.hover && test === '1' ?
-              <div className="test"
+              <div className="home-card"
               >
-                <p>Shows a list of Pokemon. View the height and name of each Pokemon.</p>
-                <div>
-                  <button>Code</button>
-                  <button>Application</button>
-                </div>
+                <p>Front-end web app created using jQuery, Bootstrap, and Pokemon REST API. It shows a list of Pokemons. when the user clicks on one, a modal with information of the Pokemon comes up. It includes the name, height, and a picture of the Pokemon.</p>
               </div>
               :
-              <div >
-                <h2>Pokemon jQuerty 1</h2>
+              <div className="home-card">
+                <h2>Pokemon jQuerty</h2>
                 <img className="img" src={Pokemon} />
-                <div className="btn-test">
-                  <button>Code</button>
-                  <button>Application</button>
-                </div>
+
               </div>
             }
+            <div className="home">
+              <button>Code</button>
+              <button className="btn-home">Application</button>
+            </div>
           </div>
           <div
             className="grid__item test2"
@@ -71,21 +69,21 @@ class WorkCard extends Component {
             onMouseLeave={this.hoverOff}
           >
             {this.state.hover && test === "2" ?
-              <div className="test"
+              <div className="home-card"
                 onMouseEnter={this.card2}
               >
                 <p>Shows a list of Pokemon. View the height and name of each Pokemon.</p>
-                <div>
-                  <button>Code</button>
-                  <button>Application</button>
-                </div>
               </div>
               :
-              <div >
+              <div className="home-card" >
                 <h2>Pokemon jQuerty</h2>
                 <img className="img" src={Pokemon} />
               </div>
             }
+            <div className="home">
+              <button>Code</button>
+              <button className="btn-home">Application</button>
+            </div>
           </div>
         </div>
       </section>
