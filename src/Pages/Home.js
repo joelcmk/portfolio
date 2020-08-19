@@ -5,7 +5,9 @@ import Work from '../Work'
 import WorkCard from '../WorkCard';
 import Footer from '../Footer'
 
+
 class Home extends Component {
+
   render() {
     return (
       <div className="Home">

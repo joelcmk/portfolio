@@ -1,11 +1,15 @@
 import React, { Component } from 'react';
 import Pokemon from './img/pokemon_1.png'
-import './WorkCard.css'
+import './WorkCard.css';
+import Card from './Card';
+
+
 
 class WorkCard extends Component {
   state = {
     hover: false,
-    card: 0
+    card: 0,
+    data: []
   }
 
   hoverOn = (value) => {
@@ -22,22 +26,28 @@ class WorkCard extends Component {
     })
   }
 
-  card = (value) => {
-    this.setState({
-      card: value
-    })
-  }
-
-  card2 = () => {
-    this.setState({
-      card: '2'
-    })
-  }
-
-
-
   render() {
     const test = this.state.card;
+    const data = [
+      {
+        id: 1,
+        name: 'Pokemon jQuerty'
+      },
+      {
+        id: 2,
+        name: 'test1'
+      },
+      {
+        id: 3,
+        name: 'test2'
+      },
+    ]
+
+    var pokemons = data.map(function (card) {
+      return card.name
+    })
+
+    console.log(pokemons)
     return (
       <section className="home_work">
         <div className="grid">
@@ -86,6 +96,9 @@ class WorkCard extends Component {
             </div>
           </div>
         </div>
+        {data.map((card) => {
+          return <Card card={card} key={card.id} />
+        })}
       </section>
     )
   }
