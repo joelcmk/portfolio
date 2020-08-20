@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import '../App.css';
 import Profile from '../Profile';
 import Work from '../Work'
-import WorkCard from '../WorkCard';
+import WorkCards from '../WorkCards';
 import Footer from '../Footer'
 
 
@@ -12,7 +12,7 @@ class Home extends Component {
     return (
       <div className="Home">
         <Profile />
-        <WorkCard />
+        <WorkCards />
         <Work />
         <Footer />
       </div>
