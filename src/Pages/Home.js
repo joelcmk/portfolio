@@ -13,7 +13,6 @@ class Home extends Component {
       <div className="Home">
         <Profile />
         <WorkCards />
-        <Work />
         <Footer />
       </div>
     )

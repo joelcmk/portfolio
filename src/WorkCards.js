@@ -49,6 +49,7 @@ class WorkCard extends Component {
 
     return (
       <section className="home_work">
+        <h1>Work</h1>
         <div className="grid">
           {data.map((card) => {
             return <Card card={card} key={card.id} image={card.image} />
