@@ -16,6 +16,10 @@ Secondary Color (Orange): #e0b354;
   --font-weight-700: 700;
 }
 
+.shadow {
+  
+}
+
 .home_work {
   clear: both;
   background-color: #fff;
@@ -48,6 +52,8 @@ Secondary Color (Orange): #e0b354;
 .grid__item {
   display: inline-block;
   width: 33%;
+  box-shadow: rgba(0, 0, 0, 0.2) 0px 4px 4px 0px;
+  border-radius: 10px;
 }
 
 /* Styling CSS grid */
