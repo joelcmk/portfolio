@@ -8,7 +8,7 @@ body {
   font-family: 'Lato', sans-serif;
   font-weight: 400;
   line-height: 1.6;
-  background-color: #6EC5E9;
+  background: radial-gradient(#1fe4f5, #3fbafe);
 }
 
 h1 {

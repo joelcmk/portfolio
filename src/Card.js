@@ -21,12 +21,16 @@ class Card extends Component {
     })
   }
 
+
+
   render() {
+    console.log(this.props.card.id)
     const card = this.props.card;
     const img = this.props.card.image
+    const key = this.props.card.id
     return (
       <div
-        className="grid__item test2"
+        className={`grid__item test2 ${`bg${key}`}`}
         onMouseEnter={() => this.hoverOn('1')}
         onMouseLeave={this.hoverOff}
       >
@@ -43,7 +47,7 @@ class Card extends Component {
           </div>
         }
         <div className="home">
-          <a href={card.code} target="_blank" className="button">Code</a>
+          <a href={card.code} target="_blank" className="card__link">Code</a>
           <a href={card.aplication} target="_blank" className="button btn-home">Aplication</a>
         </div>
       </div>
