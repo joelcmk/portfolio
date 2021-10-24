@@ -54,6 +54,49 @@ Secondary Color (Orange): #e0b354;
   width: 33%;
   box-shadow: rgba(0, 0, 0, 0.2) 0px 4px 4px 0px;
   border-radius: 10px;
+  background: radial-gradient(#1fe4f5, #3fbafe);
+  padding: 10px;
+  color: white;
+
+  /* Set width to auto */
+  width: auto;
+  transition: all 0.2s;
+}
+.bg1 {
+  background: radial-gradient(#fbc1cc, #fa99b2);
+}
+.bg2 {
+  background: radial-gradient(#76b2fe, #b69efe);;
+}
+.bg3 {
+  background: radial-gradient(#60efbc, #58d5c9);
+}
+.bg4 {
+  background: radial-gradient(#f588d8, #c0a3e5);
+}
+.bg5 {
+  background: radial-gradient(#1fe4f5, #3fbafe);
+}
+
+.card__link {
+  position: relative;
+  text-decoration: none;
+  color: rgba(255, 255, 255, 0.9);
+}
+
+.card__link::after {
+  position: absolute;
+  top: 25px;
+  left: 0;
+  content: "";
+  width: 0%;
+  height: 3px;
+  background-color: rgba(255, 255, 255, 0.6);
+  transition: all 0.5s;
+}
+
+.card__link:hover::after {
+  width: 100%;
 }
 
 /* Styling CSS grid */
@@ -63,13 +106,8 @@ Secondary Color (Orange): #e0b354;
   grid-gap: 20px;
 }
 
-.grid__item {
-  background-color: #f9a637;
-  padding: 10px;
-  color: white;
-
-  /* Set width to auto */
-  width: auto;
+.grid__item:hover {
+  transform: scale(1.01);
 }
 
 .grid__item:last-child {
